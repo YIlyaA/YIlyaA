@@ -16,5 +16,5 @@
   </a>
 </p>
 <p align="center">
-<img src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif?cid=790b7611i18pg8uutjk9c5l91woxtstdgzp70c0sk8ffhi4b&ep=v1_gifs_search&rid=giphy.gif&ct=g" />
+<!-- <img src="https://media.giphy.com/media/2IudUHdI075HL02Pkk/giphy.gif?cid=790b7611i18pg8uutjk9c5l91woxtstdgzp70c0sk8ffhi4b&ep=v1_gifs_search&rid=giphy.gif&ct=g" /> -->
 </p>
