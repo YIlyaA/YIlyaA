@@ -1,12 +1,12 @@
 
 <p align="center">
- <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2&height=250&section=header&text=Python%20developer&fontSize=70&animation=twinkling" />
+ <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2&height=250&section=header&text=ILUXA%20WEB&fontSize=70&animation=twinkling" />
 </p>
 <div align="center">
   <h2><strong>About Me</strong></h2>
 </div>
 <div align="center">
-  <p><strong>Hello! My name is Illia, and I am currently a student at Poznan University of Technology, studying Computer Science. I am passionate about software development, particularly in Python and web technologies like Django. I enjoy solving complex problems, learning new programming skills, and building innovative projects. Feel free to explore my repositories, and don't hesitate to reach out if you would like to collaborate or chat about technology!</strong></p>
+  <p><strong>Hello! My name is Illia, currently leading ILUXA WEB as Founder & CEO, bringing a passion for innovation and technical expertise to the forefront. With a focus on back-end development using Django, I am dedicated to delivering impactful digital solutions and creating value through thoughtful design and efficient execution.</strong></p>
 </div>
 
 
