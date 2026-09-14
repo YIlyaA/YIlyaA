@@ -1,0 +1,84 @@
+# This is a profile repository: what belongs in it is the page and the source
+# that produces it. Anything that can be rebuilt, anything a machine dropped
+# here, and anything private stays out.
+
+# --- operating systems -------------------------------------------------------
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# --- editors -----------------------------------------------------------------
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# --- secrets -----------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- dependencies and build output -------------------------------------------
+node_modules/
+out/
+dist/
+build/
+.remotion/
+.cache/
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+
+# --- python, for the generators in header-remotion/tools ---------------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# --- the Remotion project -----------------------------------------------------
+# A profile repository is a page, and this is the workshop that produces it.
+# It is 72 files against the six that get displayed, and buried here nobody
+# would ever browse it. Keep it out; if it is worth publishing, it is worth its
+# own repository, where it can have a README and be found.
+header-remotion/
+
+# --- renders ------------------------------------------------------------------
+# The finished GIFs live in the top-level assets/ folder and are committed:
+# they are the page. Everything the Remotion project renders on the way there
+# is output, not source — including the variants and the retired strips — and
+# it is 8 MB that nobody needs in order to look at this profile.
+header-remotion/**/assets/
+*@2x.png
+*.mp4
+*.mov
+*.webm
+
+# --- archives -----------------------------------------------------------------
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+
+# --- working files a tool dropped next to the repo ---------------------------
+Claude outputs/
+*-1.gif
+*-1.png
+*.copy.*
+tmp/
+scratch/

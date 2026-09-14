@@ -1,42 +1,41 @@
 <p align="center">
-  <img src="./assets/header-still.png" width="100%" alt="Illia Yanukovich — Founder and Backend Engineer at ILUXA WEB, with a black and orange polygonal German shepherd.">
+  <img src="./assets/header-still.png" width="100%" alt="BUILD, SOLVE, DRIVE — each word set in heavy type, with a low-poly black and orange German shepherd standing in for one of its letters.">
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/illia-yanukovich/">LinkedIn ↗</a>
-  &nbsp; / &nbsp;
-  <a href="https://github.com/YIlyaA?tab=repositories">Explore my code ↗</a>
-  &nbsp; / &nbsp;
   <a href="./README.md">Animated version ↗</a>
 </p>
 
-### The person behind the code
+### Illia
 
-I'm **Illia**, Founder & CEO of **ILUXA WEB** and a backend developer working with **Python and Django**.
+Full-stack developer and project manager.
 
-I build web products and automate business workflows. My work connects the technical details with the bigger picture: what needs to be built, why it matters, and how to get it into people's hands.
+I build products end to end — the interface people use, the system behind it, and the release that puts it in their hands. I also run the part that is not code: working out what the thing actually needs to do, setting the order it gets done in, and deciding when it is ready to go out.
 
-**Hands-on with the code. Responsible for the outcome.**
+A lot of the work is taking something that currently runs on people and making it run on its own.
 
-<p align="center">
-  <img src="./assets/focus-still.png" width="100%" alt="Build: Python and Django backend engineering. Automate: business workflows. Lead: product delivery.">
-</p>
+**Hands-on with the code. Accountable for the outcome.**
 
-### My toolkit
+### What I work with
 
 <p align="center">
-  <img src="./assets/stack.svg" width="100%" alt="Python, Django, Docker, Git, GitHub, HTML, CSS, JavaScript.">
+  <img src="./assets/tech-still.png" width="100%" alt="The tools I work with: Python, Django, PHP, JavaScript, React, Next.js, HTML, CSS, Docker, Git, GitHub, ChatGPT, Claude Code, Gemini, Perplexity.">
 </p>
 
-<details>
-<summary><strong>A little more about how I work</strong></summary>
+### On GitHub
 
-- **Build around a real need.** Start with the problem, then choose the tools.
-- **Make the routine repeatable.** Automate tasks that don't need a human every time.
-- **Keep the system understandable.** Code should be workable for the next person, too.
-- **Own the delivery.** Connect business priorities, design, and implementation.
-
-</details>
+<p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api?username=YIlyaA&show_icons=true&hide_border=true&hide_rank=true&bg_color=0B0B0D&title_color=FF6B00&text_color=F5F5F5&icon_color=FF6B00"
+    height="150"
+    alt="GitHub statistics for YIlyaA."
+  />
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=YIlyaA&layout=compact&hide_border=true&langs_count=6&bg_color=0B0B0D&title_color=FF6B00&text_color=F5F5F5"
+    height="150"
+    alt="Most used languages by YIlyaA."
+  />
+</p>
 
 <br>
 
