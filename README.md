@@ -5,15 +5,28 @@
   </picture>
 </p>
 
-### Illia
+<p align="center">
+  <img src="https://img.shields.io/badge/full--stack%20developer-FF6B00?style=for-the-badge&labelColor=0B0B0D" />
+  <img src="https://img.shields.io/badge/project%20manager-0B0B0D?style=for-the-badge&labelColor=0B0B0D" />
+</p>
 
-Full-stack developer and project manager.
+<p align="center">
+  <em>Hands-on with the code. Accountable for the outcome.</em>
+</p>
 
-I build products end to end - the interface people use, the system behind it, and the release that puts it in their hands. I also run the part that is not code: working out what the thing actually needs to do, setting the order it gets done in, and deciding when it is ready to go out.
+---
+<p align="center">
+  I build products end to end: the interface people use, the system behind it, and the release that puts it in their hands. <br>
+  I also run the part that is not code. Working out what the thing actually needs to do, setting the order it gets done in, and deciding when it is ready to go out. <br>
+  A lot of the work is taking something that currently runs on people and making it run on its own.
+</p>
 
-A lot of the work is taking something that currently runs on people and making it run on its own.
 
-**Hands-on with the code. Accountable for the outcome.**
+<p align="center">
+  <a href="mailto:info@iluxa-web.com">
+    <img src="https://img.shields.io/badge/write%20to%20me-FF6B00?style=for-the-badge&labelColor=FF6B00" height="36" />
+  </a>
+</p>
 
 ### What I work with
 
@@ -24,8 +37,6 @@ A lot of the work is taking something that currently runs on people and making i
   </picture>
 </p>
 
-### On GitHub
-
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/YIlyaA/YIlyaA/output/snake.svg"
@@ -34,22 +45,9 @@ A lot of the work is taking something that currently runs on people and making i
   />
 </p>
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=YIlyaA&show_icons=true&hide_border=true&hide_rank=true&bg_color=0B0B0D&title_color=FF6B00&text_color=F5F5F5&icon_color=FF6B00"
-    height="150"
-    alt="GitHub statistics for YIlyaA."
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=YIlyaA&layout=compact&hide_border=true&langs_count=6&bg_color=0B0B0D&title_color=FF6B00&text_color=F5F5F5"
-    height="150"
-    alt="Most used languages by YIlyaA."
-  />
-</p>
-
 <br>
 
-<a href="https://www.linkedin.com/in/illia-yanukovich/">
+<a href="mailto:info@iluxa-web.com">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="./assets/footer-still.png">
     <img src="./assets/footer.gif" width="100%" alt="Let's build something useful. Connect with Illia on LinkedIn.">

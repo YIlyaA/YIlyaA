@@ -24,19 +24,6 @@ A lot of the work is taking something that currently runs on people and making i
 
 ### On GitHub
 
-<p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=YIlyaA&show_icons=true&hide_border=true&hide_rank=true&bg_color=0B0B0D&title_color=FF6B00&text_color=F5F5F5&icon_color=FF6B00"
-    height="150"
-    alt="GitHub statistics for YIlyaA."
-  />
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=YIlyaA&layout=compact&hide_border=true&langs_count=6&bg_color=0B0B0D&title_color=FF6B00&text_color=F5F5F5"
-    height="150"
-    alt="Most used languages by YIlyaA."
-  />
-</p>
-
 <br>
 
 <a href="https://www.linkedin.com/in/illia-yanukovich/">
