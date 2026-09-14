@@ -1,8 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/header-still.png">
-    <img src="./assets/header.gif" width="100%" alt="Illia Yanukovich — Founder and Backend Engineer at ILUXA WEB. Black and orange polygonal German shepherd; animated typography and lighting.">
-  </picture>
+  <img src="./assets/header-still.png" width="100%" alt="Illia Yanukovich — Founder and Backend Engineer at ILUXA WEB, with a black and orange polygonal German shepherd.">
 </p>
 
 <p align="center">
@@ -10,7 +7,7 @@
   &nbsp; / &nbsp;
   <a href="https://github.com/YIlyaA?tab=repositories">Explore my code ↗</a>
   &nbsp; / &nbsp;
-  <a href="./STATIC.md">View without animation ↗</a>
+  <a href="./README.md">Animated version ↗</a>
 </p>
 
 ### The person behind the code
@@ -22,10 +19,7 @@ I build web products and automate business workflows. My work connects the techn
 **Hands-on with the code. Responsible for the outcome.**
 
 <p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/focus-still.png">
-    <img src="./assets/focus.gif" width="100%" alt="Build: Python and Django backend engineering. Automate: business workflows. Lead: product delivery, from a clear brief to release.">
-  </picture>
+  <img src="./assets/focus-still.png" width="100%" alt="Build: Python and Django backend engineering. Automate: business workflows. Lead: product delivery.">
 </p>
 
 ### My toolkit
@@ -47,8 +41,5 @@ I build web products and automate business workflows. My work connects the techn
 <br>
 
 <a href="https://www.linkedin.com/in/illia-yanukovich/">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/footer-still.png">
-    <img src="./assets/footer.gif" width="100%" alt="Let's build something useful. Connect with Illia on LinkedIn.">
-  </picture>
+  <img src="./assets/footer-still.png" width="100%" alt="Let's build something useful. Connect with Illia on LinkedIn.">
 </a>
