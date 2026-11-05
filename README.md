@@ -6,11 +6,6 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/full--stack%20developer-FF6B00?style=for-the-badge&labelColor=0B0B0D" />
-  <img src="https://img.shields.io/badge/project%20manager-0B0B0D?style=for-the-badge&labelColor=0B0B0D" />
-</p>
-
-<p align="center">
   <em>Hands-on with the code. Accountable for the outcome.</em>
 </p>
 
