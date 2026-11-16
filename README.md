@@ -7,14 +7,9 @@
 
 # ILUXA
 
-**AI automation for business.** I take work that runs on people and make it run on its own: AI agents, automated processes, and AI built into the tools a team already uses. Developer, founder, product builder.
+**Full-stack and AI engineer. I automate businesses with AI.**
 
-<p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/ai-agents-dark.svg"><img src="./assets/pills/ai-agents-light.svg" height="42" alt="AI agents"></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/process-automation-dark.svg"><img src="./assets/pills/process-automation-light.svg" height="42" alt="Process automation"></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/ai-integration-dark.svg"><img src="./assets/pills/ai-integration-light.svg" height="42" alt="AI integration"></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/chatbots-dark.svg"><img src="./assets/pills/chatbots-light.svg" height="42" alt="Chatbots"></picture>
-</p>
+I build products end to end, from the interface to the server it runs on, and I turn work that runs on people into AI agents and automated processes that run on their own. As a founder, I also decide what gets built first and when it ships.
 
 <table>
   <tr>
@@ -22,7 +17,7 @@
     <th align="left">What I do it with</th>
   </tr>
   <tr>
-    <td><strong>Automate processes with AI</strong><br>AI agents that do the routine, and AI brought into a team's daily work.</td>
+    <td><strong>Automate business with AI</strong><br>AI agents that do the routine, and AI built into the tools a team already uses.</td>
     <td>
       <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/claude-code-dark.svg"><img src="./assets/pills/claude-code-light.svg" height="42" alt="Claude Code"></picture>
       <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/chatgpt-dark.svg"><img src="./assets/pills/chatgpt-light.svg" height="42" alt="ChatGPT"></picture>
@@ -47,6 +42,8 @@
     <td><strong>Ship them and keep them running</strong><br>What goes out, in what order, and when it is ready.</td>
     <td>
       <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/docker-dark.svg"><img src="./assets/pills/docker-light.svg" height="42" alt="Docker"></picture>
+      <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/nginx-dark.svg"><img src="./assets/pills/nginx-light.svg" height="42" alt="Nginx"></picture>
+      <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/linux-dark.svg"><img src="./assets/pills/linux-light.svg" height="42" alt="Linux"></picture>
       <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/git-dark.svg"><img src="./assets/pills/git-light.svg" height="42" alt="Git"></picture>
       <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/github-dark.svg"><img src="./assets/pills/github-light.svg" height="42" alt="GitHub"></picture>
     </td>
@@ -56,7 +53,6 @@
 Have a process that eats your team's hours? Tell me about it.
 
 <p>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/open-to-projects-dark.svg"><img src="./assets/pills/open-to-projects-light.svg" height="42" alt="Open to new projects"></picture>
   <a href="mailto:info@iluxa-web.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/email-dark.svg"><img src="./assets/pills/email-light.svg" height="42" alt="Email: info@iluxa-web.com"></picture></a>
   <a href="https://www.linkedin.com/in/illia-yanukovich/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/linkedin-dark.svg"><img src="./assets/pills/linkedin-light.svg" height="42" alt="LinkedIn"></picture></a>
 </p>

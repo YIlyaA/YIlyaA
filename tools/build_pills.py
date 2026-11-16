@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the technology, service and contact pills in assets/pills/ as static SVG files.
+"""Build the technology and contact pills in assets/pills/ as static SVG files.
 
 Each pill is an icon plus a label, drawn twice: <slug>-light.svg and
 <slug>-dark.svg (the README picks one with <picture>). Labels are converted to
@@ -35,16 +35,9 @@ ENVELOPE = (
     "M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"
     "m1.6 2 8.4 6.3L20.4 6H3.6zM21 7.25l-9 6.75-9-6.75V18h18V7.25z"
 )
-SPARK = "M12 1C12.9 7.6 16.4 11.1 23 12 16.4 12.9 12.9 16.4 12 23 11.1 16.4 7.6 12.9 1 12 7.6 11.1 11.1 7.6 12 1z"
-DOT = "M12 5a7 7 0 1 1 0 14 7 7 0 0 1 0-14z"
 
 # slug, label, icon (Simple Icons name, or a path from above), kind, colour on light, colour on dark
 PILLS = [
-    # what the work is
-    ("ai-agents", "AI agents", SPARK, "service", ACCENT, ACCENT),
-    ("process-automation", "Process automation", SPARK, "service", ACCENT, ACCENT),
-    ("ai-integration", "AI integration", SPARK, "service", ACCENT, ACCENT),
-    ("chatbots", "Chatbots", SPARK, "service", ACCENT, ACCENT),
     # tools
     ("claude-code", "Claude Code", "claude", "tech", "#D97757", "#D97757"),
     ("chatgpt", "ChatGPT", "openai", "tech", "#000000", "#ffffff"),
@@ -59,10 +52,11 @@ PILLS = [
     ("html", "HTML", "html5", "tech", "#E34F26", "#E34F26"),
     ("css", "CSS", "css", "tech", "#663399", "#A77BDA"),
     ("docker", "Docker", "docker", "tech", "#2496ED", "#2496ED"),
+    ("nginx", "Nginx", "nginx", "tech", "#009639", "#2DBA5C"),
+    ("linux", "Linux", "linux", "tech", "#000000", "#FCC624"),
     ("git", "Git", "git", "tech", "#F05032", "#F05032"),
     ("github", "GitHub", "github", "tech", "#181717", "#ffffff"),
     # contact
-    ("open-to-projects", "Open to new projects", DOT, "tech", "#1a7f37", "#3fb950"),
     ("email", "info@iluxa-web.com", ENVELOPE, "primary", ON_ACCENT, ON_ACCENT),
     ("linkedin", "LinkedIn", "linkedin", "tech", "#0A66C2", "#4C9BE8"),
 ]
@@ -78,8 +72,8 @@ TRACKING = 0.2
 RADIUS = 9
 
 THEMES = {
-    "light": {"ink": "#1f2328", "border": "#d1d9e0", "service_bg": "#fff4ec", "service_border": "#ffc9a3"},
-    "dark": {"ink": "#f0f6fc", "border": "#3d444d", "service_bg": "#2a1a0e", "service_border": "#6b3a14"},
+    "light": {"ink": "#1f2328", "border": "#d1d9e0"},
+    "dark": {"ink": "#f0f6fc", "border": "#3d444d"},
 }
 
 
@@ -133,11 +127,6 @@ def build(font: TTFont, icons: Path, out: Path) -> None:
             if kind == "primary":
                 box = f'<rect width="{width}" height="{HEIGHT}" rx="{RADIUS}" fill="{ACCENT}"/>'
                 ink = ON_ACCENT
-            elif kind == "service":
-                box = (
-                    f'<rect x="0.5" y="0.5" width="{width - 1}" height="{HEIGHT - 1}" rx="{RADIUS - 0.5}" '
-                    f'fill="{colours["service_bg"]}" stroke="{colours["service_border"]}"/>'
-                )
             else:
                 box = (
                     f'<rect x="0.5" y="0.5" width="{width - 1}" height="{HEIGHT - 1}" '
