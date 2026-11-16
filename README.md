@@ -1,5 +1,8 @@
 <p>
-  <img src="./assets/scene-placeholder.svg" width="100%" alt="A fox at a laptop drinks coffee while small robots carry blocks past him. One robot falls, the others stop, the fox types a fix and the line moves on.">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/fox-scene-still.webp">
+    <img src="./assets/fox-scene.webp" width="100%" alt="A fox at a laptop drinks coffee while small robots carry office work past him. One robot falls, the others stop, the fox types a fix and the line moves on.">
+  </picture>
 </p>
 
 # Illia Yanukovich
