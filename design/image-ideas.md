@@ -7,9 +7,9 @@ Briefs for pictures the owner generates. Each brief says what the picture has to
 - Used in: the top of `README.md`, the only animation on the profile.
 - File to drop in: one looping video, `fox-loop.mp4` (or several clips in order: `fox-1.mp4`, `fox-2.mp4`, ...). A still of the fox alone, `fox-sheet.png`, helps but is optional. The README assets (`assets/fox-scene.webp`, `assets/fox-scene-still.png`) are built from the video.
 - Size and aspect: 21:9 if the tool offers it, otherwise 16:9 with all the action inside the middle band (the frame is cropped to about 21:9). 1080p or higher. 10 to 14 seconds in total.
-- Job: a visitor sees in a few seconds how Illia works. Small robot agents do the work, he watches over them, and when one fails he fixes it himself and the work goes on. It should feel calm and a little funny, not busy.
+- Job: a visitor sees in a few seconds how the owner works. Small robot agents do the work, he watches over them, and when one fails he fixes it himself and the work goes on. It should feel calm and a little funny, not busy.
 - Fixed:
-  - The fox is an original character that stands in for Illia: light sandy fur (he is blond), blue eyes. Not Nick Wilde and not any other existing film or game character.
+  - The fox is an original character that stands in for the owner: light sandy fur (he is blond), blue eyes. Not Nick Wilde and not any other existing film or game character.
   - The fox sits at a laptop with a cup of coffee. Small robots walk past him in a line and carry blocks.
   - The story, in this order:
     1. The fox drinks coffee. The robots walk past with their blocks.

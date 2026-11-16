@@ -1,16 +1,19 @@
 #!/usr/bin/env python3
-"""Build the technology and contact pills in assets/pills/ as static SVG files.
+"""Build the technology, service and contact pills in assets/pills/ as static SVG files.
 
 Each pill is an icon plus a label, drawn twice: <slug>-light.svg and
 <slug>-dark.svg (the README picks one with <picture>). Labels are converted to
 outlines, so the pills look the same on every machine and need no web font.
+Logos are drawn in their brand colour; a brand colour that would vanish on one
+theme (black logos on the dark page, pale ones on the white page) has its own
+value for that theme.
 
 Usage:
     python3 tools/build_pills.py --font path/to/DarkerGrotesque[wght].ttf \
         --icons path/to/simple-icons/icons
 
-Font: Darker Grotesque (OFL). Icons: Simple Icons (CC0). See design/credits.md.
-To add a technology, add a row to PILLS, run the script and add the printed
+Font: Darker Grotesque (OFL). Logos: Simple Icons (CC0). See design/credits.md.
+To add a pill, add a row to PILLS, run the script and add the printed
 <picture> block to README.md.
 """
 from __future__ import annotations
@@ -24,25 +27,44 @@ from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont
 from fontTools.varLib.instancer import instantiateVariableFont
 
-# slug, label, Simple Icons file name, kind
+ACCENT = "#FF6B00"
+ON_ACCENT = "#1a0d00"
+
+# Icons drawn on the Simple Icons 24 x 24 grid.
+ENVELOPE = (
+    "M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"
+    "m1.6 2 8.4 6.3L20.4 6H3.6zM21 7.25l-9 6.75-9-6.75V18h18V7.25z"
+)
+SPARK = "M12 1C12.9 7.6 16.4 11.1 23 12 16.4 12.9 12.9 16.4 12 23 11.1 16.4 7.6 12.9 1 12 7.6 11.1 11.1 7.6 12 1z"
+DOT = "M12 5a7 7 0 1 1 0 14 7 7 0 0 1 0-14z"
+
+# slug, label, icon (Simple Icons name, or a path from above), kind, colour on light, colour on dark
 PILLS = [
-    ("python", "Python", "python", "tech"),
-    ("django", "Django", "django", "tech"),
-    ("php", "PHP", "php", "tech"),
-    ("javascript", "JavaScript", "javascript", "tech"),
-    ("react", "React", "react", "tech"),
-    ("nextjs", "Next.js", "nextdotjs", "tech"),
-    ("html", "HTML", "html5", "tech"),
-    ("css", "CSS", "css", "tech"),
-    ("docker", "Docker", "docker", "tech"),
-    ("git", "Git", "git", "tech"),
-    ("github", "GitHub", "github", "tech"),
-    ("claude-code", "Claude Code", "claude", "tech"),
-    ("chatgpt", "ChatGPT", "openai", "tech"),
-    ("gemini", "Gemini", "googlegemini", "tech"),
-    ("perplexity", "Perplexity", "perplexity", "tech"),
-    ("email", "info@iluxa-web.com", None, "primary"),
-    ("linkedin", "LinkedIn", "linkedin", "tech"),
+    # what the work is
+    ("ai-agents", "AI agents", SPARK, "service", ACCENT, ACCENT),
+    ("process-automation", "Process automation", SPARK, "service", ACCENT, ACCENT),
+    ("ai-integration", "AI integration", SPARK, "service", ACCENT, ACCENT),
+    ("chatbots", "Chatbots", SPARK, "service", ACCENT, ACCENT),
+    # tools
+    ("claude-code", "Claude Code", "claude", "tech", "#D97757", "#D97757"),
+    ("chatgpt", "ChatGPT", "openai", "tech", "#000000", "#ffffff"),
+    ("gemini", "Gemini", "googlegemini", "tech", "#8E75B2", "#A992D0"),
+    ("perplexity", "Perplexity", "perplexity", "tech", "#1FB8CD", "#1FB8CD"),
+    ("python", "Python", "python", "tech", "#3776AB", "#5A9FD4"),
+    ("django", "Django", "django", "tech", "#092E20", "#44B78B"),
+    ("php", "PHP", "php", "tech", "#777BB4", "#8F93D1"),
+    ("javascript", "JavaScript", "javascript", "tech", "#E5C300", "#F7DF1E"),
+    ("react", "React", "react", "tech", "#087EA4", "#61DAFB"),
+    ("nextjs", "Next.js", "nextdotjs", "tech", "#000000", "#ffffff"),
+    ("html", "HTML", "html5", "tech", "#E34F26", "#E34F26"),
+    ("css", "CSS", "css", "tech", "#663399", "#A77BDA"),
+    ("docker", "Docker", "docker", "tech", "#2496ED", "#2496ED"),
+    ("git", "Git", "git", "tech", "#F05032", "#F05032"),
+    ("github", "GitHub", "github", "tech", "#181717", "#ffffff"),
+    # contact
+    ("open-to-projects", "Open to new projects", DOT, "tech", "#1a7f37", "#3fb950"),
+    ("email", "info@iluxa-web.com", ENVELOPE, "primary", ON_ACCENT, ON_ACCENT),
+    ("linkedin", "LinkedIn", "linkedin", "tech", "#0A66C2", "#4C9BE8"),
 ]
 
 HEIGHT = 36
@@ -56,17 +78,9 @@ TRACKING = 0.2
 RADIUS = 9
 
 THEMES = {
-    "light": {"ink": "#1f2328", "icon": "#59636e", "border": "#d1d9e0"},
-    "dark": {"ink": "#f0f6fc", "icon": "#9198a1", "border": "#3d444d"},
+    "light": {"ink": "#1f2328", "border": "#d1d9e0", "service_bg": "#fff4ec", "service_border": "#ffc9a3"},
+    "dark": {"ink": "#f0f6fc", "border": "#3d444d", "service_bg": "#2a1a0e", "service_border": "#6b3a14"},
 }
-ACCENT = "#FF6B00"
-ON_ACCENT = "#1a0d00"
-
-# An envelope drawn on the Simple Icons 24 x 24 grid, for the email pill.
-ENVELOPE = (
-    "M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"
-    "m1.6 2 8.4 6.3L20.4 6H3.6zM21 7.25l-9 6.75-9-6.75V18h18V7.25z"
-)
 
 
 def label_path(font: TTFont, text: str, x: float, baseline: float) -> tuple[str, float]:
@@ -89,11 +103,13 @@ def label_path(font: TTFont, text: str, x: float, baseline: float) -> tuple[str,
     return " ".join(parts), cursor - TRACKING - x
 
 
-def icon_path(icons: Path, name: str) -> str:
-    svg = (icons / f"{name}.svg").read_text(encoding="utf-8")
+def icon_path(icons: Path, icon: str) -> str:
+    if icon.startswith("M"):
+        return icon
+    svg = (icons / f"{icon}.svg").read_text(encoding="utf-8")
     found = re.search(r'<path d="([^"]+)"', svg)
     if not found:
-        raise SystemExit(f"no path in {name}.svg")
+        raise SystemExit(f"no path in {icon}.svg")
     return found.group(1)
 
 
@@ -102,25 +118,31 @@ def round_path(data: str) -> str:
 
 
 def build(font: TTFont, icons: Path, out: Path) -> None:
-    ascender = font["OS/2"].sCapHeight * FONT_SIZE / font["head"].unitsPerEm
-    baseline = (HEIGHT + ascender) / 2
-    for slug, label, icon_name, kind in PILLS:
-        icon = ENVELOPE if icon_name is None else icon_path(icons, icon_name)
+    cap_height = font["OS/2"].sCapHeight * FONT_SIZE / font["head"].unitsPerEm
+    baseline = (HEIGHT + cap_height) / 2
+    for slug, label, icon_name, kind, light_colour, dark_colour in PILLS:
+        icon = icon_path(icons, icon_name)
         text_x = PAD_X + ICON + GAP
         text, text_width = label_path(font, label, text_x, baseline)
         width = round(text_x + text_width + PAD_X)
         icon_scale = ICON / 24
         icon_y = (HEIGHT - ICON) / 2
         for theme, colours in THEMES.items():
+            icon_ink = light_colour if theme == "light" else dark_colour
+            ink = colours["ink"]
             if kind == "primary":
                 box = f'<rect width="{width}" height="{HEIGHT}" rx="{RADIUS}" fill="{ACCENT}"/>'
-                ink = icon_ink = ON_ACCENT
+                ink = ON_ACCENT
+            elif kind == "service":
+                box = (
+                    f'<rect x="0.5" y="0.5" width="{width - 1}" height="{HEIGHT - 1}" rx="{RADIUS - 0.5}" '
+                    f'fill="{colours["service_bg"]}" stroke="{colours["service_border"]}"/>'
+                )
             else:
                 box = (
                     f'<rect x="0.5" y="0.5" width="{width - 1}" height="{HEIGHT - 1}" '
                     f'rx="{RADIUS - 0.5}" fill="none" stroke="{colours["border"]}"/>'
                 )
-                ink, icon_ink = colours["ink"], colours["icon"]
             svg = (
                 f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{HEIGHT + 2 * MARGIN_Y}" '
                 f'viewBox="0 {-MARGIN_Y} {width} {HEIGHT + 2 * MARGIN_Y}" role="img" aria-label="{label}">'
