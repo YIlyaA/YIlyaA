@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1260" height="540" viewBox="0 0 1260 540" role="img" aria-label="Placeholder for the fox scene">
+  <rect x="1" y="1" width="1258" height="538" rx="20" fill="#808080" fill-opacity="0.12" stroke="#808080" stroke-opacity="0.5" stroke-width="2" stroke-dasharray="10 8"/>
+  <text x="630" y="262" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" font-weight="600" fill="#808080">Fox scene goes here</text>
+  <text x="630" y="304" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" fill="#808080">21:9 loop, built from the video in design/image-ideas.md</text>
+</svg>

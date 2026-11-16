@@ -1,50 +1,47 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/header-still.png">
-    <img src="./assets/header.gif" width="100%" alt="BUILD, SOLVE, DRIVE — each word set in heavy type, with a low-poly black and orange German shepherd standing in for one of its letters.">
-  </picture>
+<p>
+  <img src="./assets/scene-placeholder.svg" width="100%" alt="A fox at a laptop drinks coffee while small robots carry blocks past him. One robot falls, the others stop, the fox types a fix and the line moves on.">
 </p>
 
-<p align="center">
-  <em>Hands-on with the code. Accountable for the outcome.</em>
-</p>
+# Illia Yanukovich
 
----
-<p align="center">
-  I build products end to end: the interface people use, the system behind it, and the release that puts it in their hands. <br>
-  I also run the part that is not code. Working out what the thing actually needs to do, setting the order it gets done in, and deciding when it is ready to go out. <br>
-  A lot of the work is taking something that currently runs on people and making it run on its own.
-</p>
+**Developer, founder, product builder.**
 
+I build products end to end: the interface people use, the system behind it, and the release that puts it in their hands. I also run the part that is not code: what the thing needs to do, in what order it gets done, and when it is ready to go out.
 
-<p align="center">
-  <a href="mailto:info@iluxa-web.com">
-    <img src="https://img.shields.io/badge/write%20to%20me-FF6B00?style=for-the-badge&labelColor=FF6B00" height="36" />
-  </a>
-</p>
+Most of my work now is AI agents and automation. I take a job that runs on people and make it run on its own.
 
 ### What I work with
 
-<p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/tech-still.png">
-    <img src="./assets/tech.gif" width="100%" alt="The tools I work with: Python, Django, PHP, JavaScript, React, Next.js, HTML, CSS, Docker, Git, GitHub, ChatGPT, Claude Code, Gemini, Perplexity.">
-  </picture>
+<p>
+  <strong>Build</strong><br>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/python-dark.svg"><img src="./assets/pills/python-light.svg" height="42" alt="Python"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/django-dark.svg"><img src="./assets/pills/django-light.svg" height="42" alt="Django"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/php-dark.svg"><img src="./assets/pills/php-light.svg" height="42" alt="PHP"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/javascript-dark.svg"><img src="./assets/pills/javascript-light.svg" height="42" alt="JavaScript"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/react-dark.svg"><img src="./assets/pills/react-light.svg" height="42" alt="React"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/nextjs-dark.svg"><img src="./assets/pills/nextjs-light.svg" height="42" alt="Next.js"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/html-dark.svg"><img src="./assets/pills/html-light.svg" height="42" alt="HTML"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/css-dark.svg"><img src="./assets/pills/css-light.svg" height="42" alt="CSS"></picture>
 </p>
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/YIlyaA/YIlyaA/output/snake.svg"
-    width="100%"
-    alt="A snake eating my GitHub contribution graph."
-  />
+<p>
+  <strong>Ship</strong><br>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/docker-dark.svg"><img src="./assets/pills/docker-light.svg" height="42" alt="Docker"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/git-dark.svg"><img src="./assets/pills/git-light.svg" height="42" alt="Git"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/github-dark.svg"><img src="./assets/pills/github-light.svg" height="42" alt="GitHub"></picture>
 </p>
 
-<br>
+<p>
+  <strong>AI</strong><br>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/claude-code-dark.svg"><img src="./assets/pills/claude-code-light.svg" height="42" alt="Claude Code"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/chatgpt-dark.svg"><img src="./assets/pills/chatgpt-light.svg" height="42" alt="ChatGPT"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/gemini-dark.svg"><img src="./assets/pills/gemini-light.svg" height="42" alt="Gemini"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/perplexity-dark.svg"><img src="./assets/pills/perplexity-light.svg" height="42" alt="Perplexity"></picture>
+</p>
 
-<a href="mailto:info@iluxa-web.com">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/footer-still.png">
-    <img src="./assets/footer.gif" width="100%" alt="Let's build something useful. Connect with Illia on LinkedIn.">
-  </picture>
-</a>
+### Contact
+
+<p>
+  <a href="mailto:info@iluxa-web.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/email-dark.svg"><img src="./assets/pills/email-light.svg" height="42" alt="Email: info@iluxa-web.com"></picture></a>
+  <a href="https://www.linkedin.com/in/illia-yanukovich/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/pills/linkedin-dark.svg"><img src="./assets/pills/linkedin-light.svg" height="42" alt="LinkedIn"></picture></a>
+</p>
