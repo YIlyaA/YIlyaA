@@ -8,7 +8,7 @@
 
 I build products end to end: the interface people use, the system behind it, and the release that puts it in their hands. I also run the part that is not code: what the thing needs to do, in what order it gets done, and when it is ready to go out.
 
-Most of my work now is AI agents and automation. I take a job that runs on people and make it run on its own.
+Most of my work now is AI. I automate business processes with AI agents and bring AI into the way a team already works: I take a job that runs on people and make it run on its own.
 
 ### What I work with
 
